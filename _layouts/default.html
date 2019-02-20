@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 
-{{ site.title }}
-{{ page.title }}
-
-<p>My pages:</p>
-<p><a href="index.html">Home</a></p>
-<p><a href="kittens.html">Kittens</a></p>
-<hr />
-
-{{ content }}
+ <html>
+   <head>
+     <meta charset="UTF-8" />
+     <title>{{ site.title }}</title>
+   </head>
+   <body>
+     <h1>{{ site.title }}</h1>
+     <h2>{{ page.title }}</h2>
+     <p>My pages:</p>
+     <p><a href="index.html">Home</a></p>
+     <p><a href="kittens.html">Kittens</a></p>
+     <hr />
+     {{ content }}
+  </body>
+</html>
