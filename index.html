@@ -4,3 +4,8 @@ title: Pagetitle!
 ---
 <p>This is the index page</p>
 <a href="kittens.html">To the kittens!!1!</a>
+<ul>
+    {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
